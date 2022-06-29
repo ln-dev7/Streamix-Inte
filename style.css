@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+
+body {
+  height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.aside {
+  width: 245px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  background-color: #242431;
+}
+
+.main {
+  width: calc(100% - 245px);
+  margin-left: 245px;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.main-body {
+  padding: 20px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: 1 / 1 / 2 / 6;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#30233e), color-stop(#2b233b), color-stop(#282337), color-stop(#242333), color-stop(#22222e), color-stop(#22222e), color-stop(#21232e), color-stop(#21232e), color-stop(#222533), color-stop(#232637), color-stop(#24283c), to(#252941));
+  background-image: linear-gradient(to right top, #30233e, #2b233b, #282337, #242333, #22222e, #22222e, #21232e, #21232e, #222533, #232637, #24283c, #252941);
+}
+
+.main-aside {
+  background: #292a33;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 6 / 2 / 8;
+}
+/*# sourceMappingURL=style.css.map */
