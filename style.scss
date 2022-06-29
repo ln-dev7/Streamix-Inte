@@ -25,6 +25,10 @@ a {
   text-decoration: none;
 }
 
+img, button{
+  cursor: pointer;
+}
+
 .aside {
   width: 245px;
   height: 100vh;
@@ -84,7 +88,7 @@ a {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   &-body {
-    padding: 20px;
+    padding: 30px 25px 25px 25px;
     grid-area: 1 / 1 / 2 / 6;
     background-image: linear-gradient(
       to right top,
@@ -97,10 +101,112 @@ a {
       #21232e,
       #21232e,
       #222533,
-      #232637,
-      #24283c,
-      #252941
+      #262949,
+      #262949,
+      #262949
     );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    &-header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      .search {
+        position: relative;
+        overflow: hidden;
+        input {
+          border-radius: 30px;
+          outline: none;
+          border: none;
+          height: 100%;
+          width: 100%;
+          background: #262837;
+          padding: 0.75rem;
+          padding-right: 2.5rem;
+          color: $gray;
+          font-weight: 400;
+          &::placeholder{
+            color: $gray;
+                    font-weight: 400;
+          }
+        }
+        img {
+          position: absolute;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          right: 10px;
+        }
+      }
+      .watch {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        padding: 0.75rem;
+        background: #262837;
+        span{
+            color: $gray;
+            font-weight: 400;
+            margin-left: 10px;
+        }
+      }
+    }
+    &-banner{
+        position: relative;
+        width: 100%;
+        border-radius: 5px;
+        overflow: hidden;
+        .banner{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .banner-div{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            background: #252736;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-left: 10px;
+                    h2{
+                        color: $white;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                    p{
+                        color: $gray;
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
+                }
+            }
+            button{
+                border: 2px solid $blue;
+                color: $blue;
+                font-weight: 500;
+                padding: 0.6rem;
+                background: transparent;
+                border-radius: 30px;
+            }
+        }
+    }
   }
   &-aside {
     background: #292a33;
