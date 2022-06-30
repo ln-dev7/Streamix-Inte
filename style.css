@@ -20,7 +20,8 @@ a {
   text-decoration: none;
 }
 
-img, button {
+img,
+button {
   cursor: pointer;
 }
 
@@ -374,10 +375,10 @@ img, button {
 
 .main-body-cards .card button {
   position: absolute;
-  background: #FBC918;
+  background: #fbc918;
   top: 10px;
   right: 10px;
-  padding: .25rem 0.5rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 5px;
   border: none;
   color: #000;
@@ -435,5 +436,176 @@ img, button {
   -ms-grid-column: 6;
   -ms-grid-column-span: 2;
   grid-area: 1 / 6 / 2 / 8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 30px 25px 25px 25px;
+}
+
+.main-aside-head {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.main-aside-head div {
+  margin-left: 10px;
+}
+
+.main-aside-head div h2 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.main-aside-head div p {
+  color: #c5caf6;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.main-aside-head button {
+  position: absolute;
+  background: #fbc918;
+  top: 0;
+  right: 0;
+  padding: 0.1rem 0.5rem;
+  border-radius: 10px;
+  border: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.main-aside-live {
+  width: 100%;
+  background: #0088ff;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 10px #0088ff;
+          box-shadow: 0 0 10px #0088ff;
+}
+
+.main-aside-live span {
+  margin-left: 10px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.main-aside-title {
+  font-size: 19px;
+  color: #c5caf6;
+  width: 100%;
+  text-align-last: left;
+  font-weight: 500;
+  margin: 20px 0 10px 0;
+}
+
+.main-aside-cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-aside-cards img {
+  width: 50%;
+  padding: 4px;
+}
+
+.main-aside-stream {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 5px;
+}
+
+.main-aside-stream img {
+  border-radius: 50%;
+  border: 2px solid #0088ff;
+}
+
+.main-aside-friends {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.main-aside-friends .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-aside-friends .card div {
+  margin-left: 10px;
+  width: 100%;
+}
+
+.main-aside-friends .card div h2 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.main-aside-friends .card div p {
+  color: #c5caf6;
+  font-size: 12px;
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */
